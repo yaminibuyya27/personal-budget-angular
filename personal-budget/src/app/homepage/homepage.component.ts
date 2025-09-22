@@ -116,7 +116,7 @@ createD3Chart(data) {
   const legend = d3.select(`#chart`)
     .select('svg')
     .append('g')
-    .attr('transform', `translate(${width + 10}, ${margin})`);
+    .attr('transform', `translate(${margin}, 10)`);
 
   data.forEach((d, i) => {
     const legendRow = legend.append('g')
